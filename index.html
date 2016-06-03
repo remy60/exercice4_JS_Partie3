@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepase">Votre mot de passe : </label><input type="text" name="motdepase" value="" id="motdepase" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button"  onClick="verif()">Vérification</button>
+  </form>
+  <script>
+            function verif(){
+              var pw = document.getElementById('motdepase');
+              var pw1 = document.getElementById('confirmation');
+              if (pw.value == pw1.value){
+                pw.style.border = "2px solid green";
+                pw1.style.border = "2px solid green";
+              }
+              else{
+                pw.style.border = "2px solid red";
+                pw1.style.border = "2px solid red";
+              }
+            }
+  </script>
+</body>
+</html>
